@@ -15,7 +15,7 @@ to be active on everyone else who depends on your project.)
 <dependency>
   <groupId>org.kohsuke</groupId>
   <artifactId>windows-package-checker</artifactId>
-  <version>${project.version}</version>
+  <version>...</version>
   <optional>true</optional>
 </dependency>
 ------------------
