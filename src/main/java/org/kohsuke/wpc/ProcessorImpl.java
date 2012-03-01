@@ -32,7 +32,7 @@ public class ProcessorImpl extends AbstractProcessor {
             for (String t : tokens) {
                 if (RESERVED_WORDS.contains(t.toUpperCase(Locale.ENGLISH))) {
                     processingEnv.getMessager().printMessage(Kind.ERROR, 
-                            "Package name "+p.getQualifiedName()+" contains "+t+", which is a reserved word in Windows",e);
+                            "Package name "+p.getQualifiedName()+" contains "+t+", which is a reserved word in Windows. See http://support.microsoft.com/kb/74496/en-us",e);
                 }
             }
         }
