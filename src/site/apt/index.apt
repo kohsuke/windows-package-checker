@@ -1,0 +1,21 @@
+What is this?
+
+  Windows has {{{http://support.microsoft.com/kb/74496/en-us}a set of reserved words in file names}} that
+cannot be used as a file or a directory name. This little javac add-on proactively looks out for those
+problematic names in your package names and flag them as errors.
+
+
+Usage
+
+  Simply add this jar to your classpath when you compile your source code. There's no need to bundle this jar
+at your runtime. Maven users can add this as an optional dependency (or non-optional, if you want the check
+to be active on everyone else who depends on your project.)
+
+------------------
+<dependency>
+  <groupId>org.kohsuke</groupId>
+  <artifactId>windows-package-checker</artifactId>
+  <version>${project.version}</version>
+  <optional>true</optional>
+</dependency>
+------------------
