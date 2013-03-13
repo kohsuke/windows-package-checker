@@ -6,6 +6,8 @@ import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Processor;
 import javax.annotation.processing.RoundEnvironment;
 import javax.annotation.processing.SupportedAnnotationTypes;
+import javax.annotation.processing.SupportedSourceVersion;
+import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.PackageElement;
 import javax.lang.model.element.TypeElement;
@@ -16,11 +18,14 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
 
+import static javax.lang.model.SourceVersion.RELEASE_6;
+
 /**
  * @author Kohsuke Kawaguchi
  */
 @SuppressWarnings("Since15")
 @SupportedAnnotationTypes("*")
+@SupportedSourceVersion(RELEASE_6)
 @MetaInfServices(Processor.class)
 public class ProcessorImpl extends AbstractProcessor {
     @Override
