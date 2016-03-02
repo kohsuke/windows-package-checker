@@ -6,7 +6,6 @@ import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Processor;
 import javax.annotation.processing.RoundEnvironment;
 import javax.annotation.processing.SupportedAnnotationTypes;
-import javax.annotation.processing.SupportedSourceVersion;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.PackageElement;
@@ -18,14 +17,11 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
 
-import static javax.lang.model.SourceVersion.RELEASE_6;
-
 /**
  * @author Kohsuke Kawaguchi
  */
 @SuppressWarnings("Since15")
 @SupportedAnnotationTypes("*")
-@SupportedSourceVersion(RELEASE_6)
 @MetaInfServices(Processor.class)
 public class ProcessorImpl extends AbstractProcessor {
     @Override
@@ -44,6 +40,11 @@ public class ProcessorImpl extends AbstractProcessor {
         return false;
     }
     
+    @Override
+    public SourceVersion getSupportedSourceVersion() {
+        return SourceVersion.latest();
+    }
+
     // taken from http://support.microsoft.com/kb/74496/en-us
     private static final Set<String> RESERVED_WORDS = new HashSet<String>(Arrays.asList(
             "CON","PRN","AUX","CLOCK$","NUL",
