@@ -8,7 +8,7 @@
 
   <groupId>org.kohsuke</groupId>
   <artifactId>windows-package-checker</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.2</version>
 
   <name>windows-package-checker</name>
 
@@ -35,6 +35,7 @@
     <connection>scm:git:git@github.com/kohsuke/${project.artifactId}.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/kohsuke/${project.artifactId}.git</developerConnection>
     <url>http://${project.artifactId}.kohsuke.org/</url>
+    <tag>windows-package-checker-1.2</tag>
   </scm>
 
   <distributionManagement>
