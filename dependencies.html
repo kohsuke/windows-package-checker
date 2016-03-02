@@ -66,10 +66,6 @@
               
                 
               
-      
-            
-      
-            
             
             
       
@@ -97,15 +93,11 @@
                 <ul>
                   
     <li class="none">
-              <a href="index.html">About</a>
-        </li>
-                  
-    <li class="none">
-              <a href="integration.html">Continuous Integration</a>
-        </li>
-                  
-    <li class="none">
               <strong>Dependencies</strong>
+        </li>
+                  
+    <li class="none">
+              <a href="dependency-convergence.html">Dependency Convergence</a>
         </li>
                   
     <li class="none">
@@ -117,15 +109,7 @@
         </li>
                   
     <li class="none">
-              <a href="issue-tracking.html">Issue Tracking</a>
-        </li>
-                  
-    <li class="none">
-              <a href="mail-lists.html">Mailing Lists</a>
-        </li>
-                  
-    <li class="none">
-              <a href="plugin-management.html">Plugin Management</a>
+              <a href="index.html">About</a>
         </li>
                   
     <li class="none">
@@ -133,11 +117,11 @@
         </li>
                   
     <li class="none">
-              <a href="plugins.html">Project Plugins</a>
+              <a href="plugin-management.html">Plugin Management</a>
         </li>
                   
     <li class="none">
-              <a href="project-summary.html">Project Summary</a>
+              <a href="plugins.html">Project Plugins</a>
         </li>
                   
     <li class="none">
@@ -146,6 +130,10 @@
                   
     <li class="none">
               <a href="source-repository.html">Source Repository</a>
+        </li>
+                  
+    <li class="none">
+              <a href="project-summary.html">Project Summary</a>
         </li>
               </ul>
         </li>
@@ -162,7 +150,48 @@
     </div>
     <div id="content">
       <div id="contentBox">
-        <a name="Project_Dependencies"></a><div class="section"><h2>Project Dependencies<a name="Project_Dependencies"></a></h2><a name="Project_Dependencies_compile"></a><div class="section"><h3>compile<a name="compile"></a></h3><p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p><table border="0" class="bodyTable"><tr class="a"><th>GroupId</th><th>ArtifactId</th><th>Version</th><th>Type</th><th>License</th><th>Optional</th></tr><tr class="b"><td>org.kohsuke.metainf-services</td><td><a class="externalLink" href="http://metainf-srvices.kohsuke.org/">metainf-services</a></td><td>1.3</td><td>jar</td><td><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT license</a></td><td>Yes</td></tr></table></div><a name="Project_Dependencies_test"></a><div class="section"><h3>test<a name="test"></a></h3><p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p><table border="0" class="bodyTable"><tr class="a"><th>GroupId</th><th>ArtifactId</th><th>Version</th><th>Type</th><th>License</th></tr><tr class="b"><td>junit</td><td><a class="externalLink" href="http://junit.org">junit</a></td><td>3.8.1</td><td>jar</td><td><a class="externalLink" href="http://www.opensource.org/licenses/cpl1.0.txt">Common Public License Version 1.0</a></td></tr></table></div></div><a name="Project_Transitive_Dependencies"></a><div class="section"><h2>Project Transitive Dependencies<a name="Project_Transitive_Dependencies"></a></h2><p>No transitive dependencies are required for this project.</p></div><a name="Project_Dependency_Graph"></a><div class="section"><h2>Project Dependency Graph<a name="Project_Dependency_Graph"></a></h2><script language="javascript" type="text/javascript">
+        <a name="Project_Dependencies"></a>
+<div class="section">
+<h2>Project Dependencies<a name="Project_Dependencies"></a></h2><a name="Project_Dependencies_compile"></a>
+<div class="section">
+<h3>compile<a name="compile"></a></h3>
+<p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+<th>License</th>
+<th>Optional</th></tr>
+<tr class="b">
+<td>org.kohsuke.metainf-services</td>
+<td><a class="externalLink" href="http://metainf-srvices.kohsuke.org/">metainf-services</a></td>
+<td>1.3</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT license</a></td>
+<td>Yes</td></tr></table></div><a name="Project_Dependencies_test"></a>
+<div class="section">
+<h3>test<a name="test"></a></h3>
+<p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+<th>License</th></tr>
+<tr class="b">
+<td>junit</td>
+<td><a class="externalLink" href="http://junit.org">junit</a></td>
+<td>3.8.1</td>
+<td>jar</td>
+<td><a class="externalLink" href="http://www.opensource.org/licenses/cpl1.0.txt">Common Public License Version 1.0</a></td></tr></table></div></div><a name="Project_Transitive_Dependencies"></a>
+<div class="section">
+<h2>Project Transitive Dependencies<a name="Project_Transitive_Dependencies"></a></h2>
+<p>No transitive dependencies are required for this project.</p></div><a name="Project_Dependency_Graph"></a>
+<div class="section">
+<h2>Project Dependency Graph<a name="Project_Dependency_Graph"></a></h2><script language="javascript" type="text/javascript">
       function toggleDependencyDetail( divId, imgId )
       {
         var div = document.getElementById( divId );
@@ -179,12 +208,139 @@
         }
       }
 </script>
-<a name="Dependency_Tree"></a><div class="section"><h3>Dependency Tree<a name="Dependency_Tree"></a></h3><ul><li>org.kohsuke:windows-package-checker:jar:1.1 <img id="_1584503872" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_397081099', '_1584503872' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_397081099" style="display:none"><table border="0" class="bodyTable"><tr class="a"><th>windows-package-checker</th></tr><tr class="b"><td><p><b>Description: </b>windows-package-checker</p><p><b>URL: </b><a class="externalLink" href="http://kohsuke.org/windows-package-checker/">http://kohsuke.org/windows-package-checker/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT license</a></p></td></tr></table></div><ul><li>junit:junit:jar:3.8.1 (test) <img id="_338385105" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1919103912', '_338385105' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1919103912" style="display:none"><table border="0" class="bodyTable"><tr class="a"><th>JUnit</th></tr><tr class="b"><td><p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p><p><b>URL: </b><a class="externalLink" href="http://junit.org">http://junit.org</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/cpl1.0.txt">Common Public License Version 1.0</a></p></td></tr></table></div></li><li>org.kohsuke.metainf-services:metainf-services:jar:1.3 (compile) <img id="_1436813831" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_528146322', '_1436813831' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_528146322" style="display:none"><table border="0" class="bodyTable"><tr class="a"><th>META-INF/services generator</th></tr><tr class="b"><td><p><b>Description: </b>Annotation-driven META-INF/services auto-generation</p><p><b>URL: </b><a class="externalLink" href="http://metainf-srvices.kohsuke.org/">http://metainf-srvices.kohsuke.org/</a></p><p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT license</a></p></td></tr></table></div></li></ul></li></ul></div></div><a name="Licenses"></a><div class="section"><h2>Licenses<a name="Licenses"></a></h2><p><b>MIT license: </b>META-INF/services generator, windows-package-checker</p><p><b>Common Public License Version 1.0: </b>JUnit</p></div><a name="Dependency_File_Details"></a><div class="section"><h2>Dependency File Details<a name="Dependency_File_Details"></a></h2><table border="0" class="bodyTable"><tr class="a"><th>Filename</th><th>Size</th><th>Entries</th><th>Classes</th><th>Packages</th><th>JDK Rev</th><th>Debug</th></tr><tr class="b"><td>junit-3.8.1.jar</td><td>118.23 kB</td><td>119</td><td>100</td><td>6</td><td>1.1</td><td>debug</td></tr><tr class="a"><td>metainf-services-1.3.jar</td><td>6.91 kB</td><td>14</td><td>2</td><td>2</td><td>1.5</td><td>debug</td></tr><tr class="b"><th>Total</th><th>Size</th><th>Entries</th><th>Classes</th><th>Packages</th><th>JDK Rev</th><th>Debug</th></tr><tr class="a"><td>2</td><td>125.15 kB</td><td>133</td><td>102</td><td>8</td><td>1.5</td><td>2</td></tr><tr class="b"><td>compile: 1</td><td>compile: 6.91 kB</td><td>compile: 14</td><td>compile: 2</td><td>compile: 2</td><td>-</td><td>compile: 1</td></tr><tr class="a"><td>test: 1</td><td>test: 118.23 kB</td><td>test: 119</td><td>test: 100</td><td>test: 6</td><td>-</td><td>test: 1</td></tr></table></div><a name="Dependency_Repository_Locations"></a><div class="section"><h2>Dependency Repository Locations<a name="Dependency_Repository_Locations"></a></h2><table border="0" class="bodyTable"><tr class="a"><th>Repo ID</th><th>URL</th><th>Release</th><th>Snapshot</th></tr><tr class="b"><td>central</td><td><a class="externalLink" href="http://repo.maven.apache.org/maven2">http://repo.maven.apache.org/maven2</a></td><td>Yes</td><td>-</td></tr></table><p>Repository locations for each of the Dependencies.</p><table border="0" class="bodyTable"><tr class="a"><th>Artifact</th><th>cloudbees-internal</th></tr><tr class="b"><td>junit:junit:jar:3.8.1</td><td><a class="externalLink" href="https://repo-internal.cloudbees.com/junit/junit/3.8.1/junit-3.8.1.jar"><img alt="Found at https://repo-internal.cloudbees.com" src="images/icon_success_sml.gif" /></a></td></tr><tr class="a"><td>org.kohsuke.metainf-services:metainf-services:jar:1.3</td><td><a class="externalLink" href="https://repo-internal.cloudbees.com/org/kohsuke/metainf-services/metainf-services/1.3/metainf-services-1.3.jar"><img alt="Found at https://repo-internal.cloudbees.com" src="images/icon_success_sml.gif" /></a></td></tr><tr class="b"><th>Total</th><th>cloudbees-internal</th></tr><tr class="a"><td>2 (compile: 1, test: 1)</td><td>2</td></tr></table></div>
+<a name="Dependency_Tree"></a>
+<div class="section">
+<h3>Dependency Tree<a name="Dependency_Tree"></a></h3>
+<ul>
+<li>org.kohsuke:windows-package-checker:jar:1.2 <img id="_img1" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep0', '_img1' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep0" style="display:none">
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>windows-package-checker</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>windows-package-checker</p>
+<p><b>URL: </b><a class="externalLink" href="http://kohsuke.org/windows-package-checker/">http://kohsuke.org/windows-package-checker/</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT license</a></p></td></tr></table></div>
+<ul>
+<li>junit:junit:jar:3.8.1 (test) <img id="_img3" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep2', '_img3' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep2" style="display:none">
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>JUnit</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p>
+<p><b>URL: </b><a class="externalLink" href="http://junit.org">http://junit.org</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/cpl1.0.txt">Common Public License Version 1.0</a></p></td></tr></table></div></li>
+<li>org.kohsuke.metainf-services:metainf-services:jar:1.3 (compile) <img id="_img5" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep4', '_img5' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep4" style="display:none">
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>META-INF/services generator</th></tr>
+<tr class="b">
+<td>
+<p><b>Description: </b>Annotation-driven META-INF/services auto-generation</p>
+<p><b>URL: </b><a class="externalLink" href="http://metainf-srvices.kohsuke.org/">http://metainf-srvices.kohsuke.org/</a></p>
+<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT license</a></p></td></tr></table></div></li></ul></li></ul></div></div><a name="Licenses"></a>
+<div class="section">
+<h2>Licenses<a name="Licenses"></a></h2>
+<p><b>MIT license: </b>META-INF/services generator, windows-package-checker</p>
+<p><b>Common Public License Version 1.0: </b>JUnit</p></div><a name="Dependency_File_Details"></a>
+<div class="section">
+<h2>Dependency File Details<a name="Dependency_File_Details"></a></h2>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>Filename</th>
+<th>Size</th>
+<th>Entries</th>
+<th>Classes</th>
+<th>Packages</th>
+<th>Java Version</th>
+<th title="Indicates whether these dependencies have been compiled with debug information.">Debug Information</th></tr>
+<tr class="b">
+<td>junit-3.8.1.jar</td>
+<td>121.07 kB</td>
+<td>119</td>
+<td>100</td>
+<td>6</td>
+<td>1.1</td>
+<td>Yes</td></tr>
+<tr class="a">
+<td>metainf-services-1.3.jar</td>
+<td>7.08 kB</td>
+<td>14</td>
+<td>2</td>
+<td>2</td>
+<td>1.5</td>
+<td>Yes</td></tr>
+<tr class="b">
+<th>Total</th>
+<th>Size</th>
+<th>Entries</th>
+<th>Classes</th>
+<th>Packages</th>
+<th>Java Version</th>
+<th>Debug Information</th></tr>
+<tr class="a">
+<td>2</td>
+<td>128.15 kB</td>
+<td>133</td>
+<td>102</td>
+<td>8</td>
+<td>1.5</td>
+<td>2</td></tr>
+<tr class="b">
+<td>compile: 1</td>
+<td>compile: 7.08 kB</td>
+<td>compile: 14</td>
+<td>compile: 2</td>
+<td>compile: 2</td>
+<td>-</td>
+<td>compile: 1</td></tr>
+<tr class="a">
+<td>test: 1</td>
+<td>test: 121.07 kB</td>
+<td>test: 119</td>
+<td>test: 100</td>
+<td>test: 6</td>
+<td>-</td>
+<td>test: 1</td></tr></table></div><a name="Dependency_Repository_Locations"></a>
+<div class="section">
+<h2>Dependency Repository Locations<a name="Dependency_Repository_Locations"></a></h2>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>Repo ID</th>
+<th>URL</th>
+<th>Release</th>
+<th>Snapshot</th>
+<th>Blacklisted</th></tr>
+<tr class="b">
+<td>central</td>
+<td><a class="externalLink" href="https://repo.maven.apache.org/maven2">https://repo.maven.apache.org/maven2</a></td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td></tr>
+<tr class="a">
+<td>jenkinsci-cert-snapshot</td>
+<td><a class="externalLink" href="https://repository-jenkinsci-cert.forge.cloudbees.com/snapshot/">https://repository-jenkinsci-cert.forge.cloudbees.com/snapshot/</a></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td></tr></table>
+<p>Repository locations for each of the Dependencies.</p>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>Artifact</th></tr>
+<tr class="b">
+<td>junit:junit:jar:3.8.1</td></tr>
+<tr class="a">
+<td>org.kohsuke.metainf-services:metainf-services:jar:1.3</td></tr>
+<tr class="b">
+<th>Total</th></tr>
+<tr class="a">
+<td>2 (compile: 1, test: 1)</td></tr></table></div>
       </div>
     </div>
     <div id="footer">
       <div class="xright">&#169;  
-          2013
+          2016
     
           <a href="http://kohsuke.org/">Kohsuke Kawaguchi</a> and other contributors
           
@@ -192,8 +348,8 @@
 
   
   
-  &nbsp;| Last Published: 03/13/2013
-  &nbsp;| Version: 1.1
+  &nbsp;| Last Published: 2016-03-01
+  &nbsp;| Version: 1.2
 </div>
       <div class="clear">
         <hr/>
